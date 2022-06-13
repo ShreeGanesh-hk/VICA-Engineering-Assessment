@@ -60,7 +60,5 @@ public/data - this folder contains initail json data which will be used to serve
 - This App helps to add/remove any new data to users or books and it can be done by very few lines of code
 
 
-#### a Layout
-
 
 
