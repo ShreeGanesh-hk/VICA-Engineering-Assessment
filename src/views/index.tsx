@@ -38,18 +38,19 @@ export default function MainPage() {
     }).catch((error) => { console.log(error) })
   }, [dispatch]);
 
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* punlic routes */}
-        <Route path="/" element={<Navigate to="analytics" replace />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<Navigate to="/analytics" replace />} />
         <Route path="analytics" element={<Analytics />} />
+        <Route path="login" element={<LoginPage />} />
         <Route path="unauthorized" element={<Unauthorized />} />
 
         {/* protected routes */}
         <Route element={<RequireAuth allowedRoles={[Roles.admin]} />}>
-          <Route path="/users" element={<UserManagement />} />
+          <Route path="users" element={<UserManagement />} />
         </Route>
         <Route element={<RequireAuth allowedRoles={[Roles.editor, Roles.admin]} />}>
           <Route path="books" element={<BookManagement />} />
