@@ -1,0 +1,13 @@
+{ "books" : [{"id":1,"title": "Northanger Abbey", "author": "Austen, Jane", "published": 1814, "genre": "Penguin", "borrower":  ""},
+{"id":2,"title": "War and Peace", "author": "Tolstoy, Leo", "published": 1865, "genre": "Penguin", "borrower":  ""},
+{"id":3,"title": "Anna Karenina", "author": "Tolstoy, Leo", "published": 1875, "genre": "Penguin", "borrower":  ""},
+{"id":4,"title": "Mrs. Dalloway", "author": "Woolf, Virginia", "published": 1925, "genre": "Harcourt Brace", "borrower":  ""},
+{"id":5,"title": "The Hours", "author": "Cunnningham, Michael", "published": 1999, "genre": "Harcourt Brace", "borrower":  ""},
+{"id":6,"title": "Huckleberry Finn", "author": "Twain, Mark", "published": 1865, "genre": "Penguin", "borrower":  ""},
+{"id":7,"title": "Bleak House", "author": "Dickens, Charles", "published": 1870, "genre": "Random House", "borrower":  ""},
+{"id":8,"title": "Tom Sawyer", "author": "Twain, Mark", "published": 1862, "genre": "Random House", "borrower":  ""},
+{"id":9,"title": "A Room of One's Own", "author": "Woolf, Virginia", "published": 1922, "genre": "Penguin", "borrower":  ""},
+{"id":10,"title": "Harry Potter", "author": "Rowling, J.K.", "published": 2000, "genre": "Harcourt Brace", "borrower":  ""},
+{"id":11,"title": "One Hundred Years of Solitude", "author": "Marquez", "published": 1967, "genre": "Harper  Perennial", "borrower":  ""},
+{"id":12,"title": "Hamlet, Prince of Denmark", "author": "Shakespeare", "published": 1603, "genre": "Signet  Classics", "borrower":  ""},
+{"id":13,"title": "Lord of the Rings", "author": "Tolkien, J.R.", "published": 1937, "genre": "Penguin", "borrower":  ""}]}

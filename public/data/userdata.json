@@ -1,0 +1,54 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Administrator",
+            "role": 0
+        },
+        {
+            "id":"2",
+            "name":"public1",
+            "role":1            
+        },
+        {
+            "id":"3",
+            "name":"public2",
+            "role":1            
+        },
+        {
+            "id":"4",
+            "name":"public3",
+            "role":1            
+        },
+        {
+            "id":"5",
+            "name":"public4",
+            "role":1            
+        },
+        {
+            "id":"6",
+            "name":"public5",
+            "role":1            
+        },
+        {
+            "id":"7",
+            "name":"public6",
+            "role":1            
+        },
+        {
+            "id":"8",
+            "name":"public7",
+            "role":1            
+        },
+        {
+            "id":"9",
+            "name":"public8",
+            "role":1            
+        },
+        {
+            "id":"10",
+            "name":"public9",
+            "role":1            
+        }
+    ]
+}
