@@ -42,7 +42,7 @@ export default function MainPage() {
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* punlic routes */}
-        {/* <Route path="/" element={<Navigate to="analytics" replace />} /> */}
+        <Route path="/" element={<Navigate to="analytics" replace />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="analytics" element={<Analytics />} />
         <Route path="unauthorized" element={<Unauthorized />} />

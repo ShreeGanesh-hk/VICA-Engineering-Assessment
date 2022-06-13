@@ -2,11 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### 1 `npm install`
+
+Install all the necessary libraries
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### 2 `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,33 +18,49 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### 3 Redux Setup
+This Project is using latest version of redux and reduxjs/toolkit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+reduxjs/toolkit comes with all the neccessary libaries to create a reducer in a simple way and easy to maintainance
 
-### `npm run build`
+Redux state is used for authorization, Loading, Book and user management screens.
+Redux state for each function are listed under src/data-manage/feautres
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is using Typescript so we will not be feeding unwanted data into the redux store
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Store is initialized in App Component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4 Project Structure
+src/components - consits of small ui resuable components
+src/datamanage - includes redux store, models (Interfaces and types) and main store function
+src/services - fetching data from json file and formating data for the graphs
+src/utils - customtheme for the project and event types and constants
+src/views - analytics page
+src/views/book - book management page
+src/views/login - login page
+src/view/user - user page
+src/index - for main inital design page and routing
+src/layout - for child routed components and layout
+public/data - this folder contains initail json data which will be used to serve the data for books and users from bookdata.json and userdata.json respectively
 
-### `npm run eject`
+### 5 Implementation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- This project uses Material UI component, Redux, Router, react-chartjs-2 as main libraries and all the components are build on Typescript
+- For user and book management i have implemented sorting, pagination and editing
+- For Deleting it is inline action and for adding new user or book or editing the them is done throug Dialog or we call modal popup
+- While editing or Creating new record basic validation with approriate error message to the users have been implemented
+- This project also supports authorized and authorization based on user role and name.
+- Routes has also been configured based on authorization
+- Public access, Authorized/Authorization redirect to Login page if user in not logged in
+- Main App Bar has all the required links for navigation and under user icon
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 6 Scalability
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Since whole app is build on Typescript there are very minimal chance of breaking the app based on data. However few functional logics are missing from required.
+- This App helps to add/remove any new data to users or books and it can be done by very few lines of code
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+#### a Layout
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
